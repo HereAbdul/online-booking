@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    width: 100%;
+    border-bottom: 1px solid gainsboro;
+}
+
+header .top-alert {
+    background-color: royalblue;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+.top-alert .fa-chess-queen {
+    color: yellow;
+    font-size: 20px;
+}
+
+.top-alert .subscribe {
+    text-decoration: none;
+    border-bottom: 1px solid white;
+    color: white;
+    font-weight: 600;
+}
+
+header nav .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.container .one-side {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.one-side .fa-bars {
+    font-size: 20px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.container .two-side ul {
+    display: flex;
+    list-style: none;
+}
+
+.two-side ul li {
+    margin-right: 30px;
+    padding: 10px 5px 10px 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+
+.two-side ul .sign-up {
+    background-color: royalblue;
+    color: white;
+    border-radius: 5px
+}
+
+/* ======================================================== */
+section {
+    display: flex;
+}
+
+section .sidebar {
+    height: 100vh;
+    width: 180px;
+    background-color: rgb(255, 253, 253);
+    transition: 0.3s;
+    border-right: 1px solid gray;
+
+}
+
+.sidebar.close {
+    width: 70px;
+}
+
+.sidebar .links ul {
+    list-style: none;
+}
+
+.links li {
+    height: 50px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.sidebar.close .text {
+    opacity: 0;
+
+}
+
+.links li i {
+    display: flex;
+    align-items: center;
+    color: rgb(75, 75, 75);
+    justify-content: center;
+    min-width: 60px;
+    font-size: 20px;
+}
+.links li:hover{
+    background-color: rgba(128, 128, 128, 0.32);
+    transition: all .3s;
+}
+.active {
+    background-color: rgba(128, 128, 128, 0.32);
+    padding: 10px 0 10px 0;
+    transition: all .3s;
+    border-radius: 5px;
+}
+
+.links ul a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.4s;
+}
+
+.links ul li span {
+    margin-left: 1rem;
+    color: rgb(75, 75, 75);
+    transition: 0.2s;
+}
+
+/* =================================================== */
+section .divs {
+    width: calc(100% - 70px);
+    overflow: hidden;
+}
+
+.divs .home {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background-color: royalblue;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.container .home-text h1 {
+    color: white;
+    font-size: 30px;
+}
+
+.home-text h5 {
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.home-text form {
+    margin-top: 15px;
+    width: 100%;
+}
+
+form .check-box {
+    display: flex;
+    padding: 5px;
+}
+
+.check-box p {
+    color: white;
+    margin-left: 15px;
+}
+
+.check-box input[type='checkbox'] {
+    margin-right: 10px;
+    width: 1.3em;
+    height: 1.3em;
+    cursor: pointer;
+}
+
+form .input-box {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+}
+
+form .select {
+    background-color: white;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+.select span {
+    font-size: 13px;
+
+}
+
+.select i {
+    color: grey;
+    cursor: pointer;
+}
+
+.select select {
+    border: none;
+    outline: none;
+
+}
+
+.select input[type='date'] {
+    opacity: -1;
+    width: 20px;
+    cursor: pointer;
+}
+
+.select input[type='date']::-webkit-calendar-picker-indicator {
+    opacity: -1;
+    cursor: pointer;
+}
+
+form .input-box .form-btn button {
+    border: none;
+    padding: 15px 40px 15px 40px;
+    background-color: orange;
+    margin-left: 10px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
+    font-size: 17px;
+
+}
+
+/* =========================== */
+.divs .cards {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+    padding-bottom: 10px;
+}
+
+.cards .card {
+    display: flex;
+    border: 1px solid rgb(207, 205, 205);
+    padding: 15px 50px 15px 50px;
+    border-radius: 15px;
+
+}
+
+.card img {
+    margin-right: 10px;
+}
+
+.card .text h5 {
+    font-weight: 300;
+}
+
+/* ===================== */
+.divs .moving {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+
+    }
+
+    to {
+        transform: translateX(-100%);
+
+    }
+}
+
+.moving .content .slider-container {
+    margin-top: 3rem;
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.slider-container .slider {
+    display: inline-block;
+    animation: 15s slide infinite linear;
+}
+
+.slider img {
+    width: 100px;
+    margin: 40px;
+    cursor: pointer;
+}
+
+
+/* ===================================== */
+
+.divs .black-div {
+    background-color: #313131;
+}
+
+.black-div .black-div-content {
+    text-align: center;
+    color: #ffffff;
+    padding: 30px;
+}
+.black-div-content .cards .boxes{
+    margin: 5px;
+}
+
+.black-div-content h3 {
+    font-weight: 300;
+}
+
+
+/* =========================== */
+.divs .app-div {
+    width: 100%;
+}
+
+.app-div .blue-app {
+    background-color: #1476d1;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 10px 0 10px;
+    gap: 10rem;
+}
+
+.blue-app .side-one,
+.side-two {
+    margin-top: 30px;
+}
+
+.blue-app .side-one h1 {
+    color: white;
+}
+
+.side-one h4 {
+    color: white;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.side-one .logos {
+    display: flex;
+    margin-top: 30px;
+}
+
+.logos img {
+    width: 120px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.side-one .form {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+}
+
+.form input[type='email'] {
+    padding: 10px;
+    border: none;
+    outline: none;
+    width: 70%;
+    margin-right: 5px;
+    border-radius: 10px;
+}
+
+.form button {
+    width: 30%;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(25, 73, 219);
+    color: white;
+    padding: 5px;
+}
+
+.side-one p {
+    margin-top: 30px;
+    color: white;
+}
+
+/* ====================================== */
+
+.divs footer {
+    width: 100%;
+}
+
+footer .footer-content {
+    background-color: #313131;
+    width: 100%;
+}
+
+.footer-content .top-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.top-footer .footer-logo img {
+    width: 80px;
+    border-radius: 50%;
+}
+
+.top-footer .footer-icons {
+    display: flex;
+    align-items: center;
+}
+
+.footer-icons h2 {
+    margin-right: 10px;
+    color: white;
+}
+
+.footer-icons i {
+    margin-left: 10px;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+}
+
+.footer-content .links {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    color: white;
+}
+
+.links p:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+.links .link .main-link {
+    color: orange;
+}
+
+.footer-content .footer-text {
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+#airline-content{
+    display: none;
+}
+#bus-content{
+    display: block;
+}

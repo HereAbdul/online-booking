@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookme.pk</title>
+    <link rel="shortcut icon" href="/img/footerlogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/index.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="top-alert">
+            <i class="fa-solid fa-chess-queen"></i>
+            Become a member of <strong>BookmeBro</strong> and get amazing discounts and exclusive perks. <a
+                class="subscribe" href="#">Subscribe Now</a>
+        </div>
+        <nav>
+            <div class="container">
+                <div class="one-side">
+                    <i class="fa-solid fa-bars" id="menu-btn"></i>
+                    <img src="/img/bookme logo.png" alt="logo">
+                </div>
+                <div class="two-side">
+                    <ul>
+                        <li>Help</li>
+                        <li>Log in</li>
+                        <li class="sign-up">Sign up</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="sidebar close">
+            <div class="links">
+                <ul>
+                    <li><i id="bus" class="fa-solid fa-bus active"></i><span class="text ">Bus</span></li>
+                    <li><i id="airline" class="fa-solid fa-plane"></i><span class="text">Flights</span></li>
+                    <li id="train"><i class="fa-solid fa-train"></i><span class="text">Trains</span></li>
+                    <li id="hotel"><i class="fa-solid fa-hotel"></i><span class="text">Hotels</span></li>
+                    <li id="movie"><i class="fa-solid fa-video"></i><span class="text">Movie</span></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="divs">
+            <div class="home">
+                <div class="container">
+                    <div class="home-text">
+                        <h1>Search for <span id="title">Bus</span></h1>
+                        <h5>Find the best deals for your <span id="desc">bus</span> travel</h5>
+                        <form>
+                            <div class="check-box">
+                                <p> <input type="checkbox" id="checkbox1" onclick="updateCheckboxes(this)">One Way</p>
+                                <p> <input type="checkbox" id="checkbox2" onclick="updateCheckboxes(this)">Round Trip
+                                </p>
+                            </div>
+                            <div class="input-box">
+                                <div class="select">
+                                    <select required="">
+                                        <option>All Services</option>
+                                        <option>Road Master - upto 40% off</option>
+                                        <option>New Pakistan Coach</option>
+                                        <option>New Prince</option>
+                                        <option>Madina Swat Yutong Service</option>
+                                        <option>Ariana Daewoo Service</option>
+                                        <option>New Shandaar</option>
+                                        <option>Al Hussnain Daewoo</option>
+                                        <option>Super Abaseen Daewoo</option>
+                                        <option>EK Movers</option>
+                                        <option>Gujjar Travels G.T Road</option>
+                                        <option>New Irfan Khan Service</option>
+                                        <option>Al Naseeb Daewoo</option>
+                                        <option>Al Habib Sleeper Service</option>
+                                        <option>Niazi Express</option>
+                                        <option>Sarbandi Express</option>
+                                        <option>Al Daulat Service</option>
+                                        <option>Al Aryan Movers</option>
+                                        <option>Al Imdad Service</option>
+                                        <option>AK Movers</option>
+                                        <option>Shahid Coach</optionalue=>
+                                        <option>Bala Gujjar</option>
+                                    </select>
+                                </div>
+                                <div class="select">
+                                    <span><img src="/img/departure.png" alt=""></span>
+                                    <select required="firstInput" placeholder="Departure">
+                                        <option>Departure</option>
+                                        <option>Lahore</option>
+                                        <option>Rawalpindi / Islamabad</option>
+                                        <option>Multan</option>
+                                        <option>Dera Ghazi Khan</option>
+                                        <option>Bahawalpur</option>
+                                        <option>Muzafargarh</option>
+                                        <option>Sadiqabad</option>
+                                        <option>Peshawar</option>
+                                        <option>Lodhran</option>
+                                        <option>Sahiwal</option>
+                                        <option>Sargodha</option>
+                                        <option>Rajan Pur</option>
+                                        <option>Mianwali</option>
+                                        <option>Jhang</option>
+                                        <option>Karachi</option>
+                                        <option">Swat</option>
+                                            <option>Faisalabad</option>
+                                            <option>Abbottabad</option>
+                                            <option>Sialkot</option>
+                                            <option">Gujrat</option>
+                                                <option">Dera Ismail Khan</option>
+                                                    <option>Okara</option>
+                                                    <option>Haripur</option>
+                                                    <option>Chichawatni</option>
+                                                    <option">Dunyapur</option>
+                                                        <option>Jahanian</option>
+                                                        <option>Mardan</option>
+                                                        <option>Chowk Bahadurpur</option>
+                                                        <option>Khanewal</option>
+                                                        <option>Sukkur</option>
+                                                        <option>Moro</option>
+                                                        <option>Hyderabad</option>
+                                                        <option>Taunsa Sharif</option>
+                                                        <option>Bhakkar</option>
+                                                        <option>Nowshera</option>
+                                    </select>
+                                </div>
+                                <div class="select">
+                                    <span><img src="/img/arrivle.png" alt=""></span>
+                                    <select required="firstInput" placeholder="Departure">
+                                        <option>Arrival</option>
+                                        <option>Lahore</option>
+                                        <option>Rawalpindi / Islamabad</option>
+                                        <option>Multan</option>
+                                        <option>Dera Ghazi Khan</option>
+                                        <option>Bahawalpur</option>
+                                        <option>Muzafargarh</option>
+                                        <option>Sadiqabad</option>
+                                        <option>Peshawar</option>
+                                        <option>Lodhran</option>
+                                        <option>Sahiwal</option>
+                                        <option>Sargodha</option>
+                                        <option>Rajan Pur</option>
+                                        <option>Mianwali</option>
+                                        <option>Jhang</option>
+                                        <option>Karachi</option>
+                                        <option">Swat</option>
+                                            <option>Faisalabad</option>
+                                            <option>Abbottabad</option>
+                                            <option>Sialkot</option>
+                                            <option">Gujrat</option>
+                                                <option">Dera Ismail Khan</option>
+                                                    <option>Okara</option>
+                                                    <option>Haripur</option>
+                                                    <option>Chichawatni</option>
+                                                    <option">Dunyapur</option>
+                                                        <option>Jahanian</option>
+                                                        <option>Mardan</option>
+                                                        <option>Chowk Bahadurpur</option>
+                                                        <option>Khanewal</option>
+                                                        <option>Sukkur</option>
+                                                        <option>Moro</option>
+                                                        <option>Hyderabad</option>
+                                                        <option>Taunsa Sharif</option>
+                                                        <option>Bhakkar</option>
+                                                        <option>Nowshera</option>
+                                    </select>
+                                </div>
+                                <div class="select">
+                                    <span>Date</span>
+                                    <input type="date" placeholder="Date" required>
+                                    <img src="/img/date.png" alt="">
+                                </div>
+                                <div class="form-btn">
+                                    <button><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <img src="/img/app.png" alt="">
+                    <div class="text">
+                        <h4>Download Bookme App</h4>
+                        <h5>Find the best deals on our mobile app</h5>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/help.png" alt="">
+                    <div class="text">
+                        <h4>Help center</h4>
+                        <h5>Connect with our support team.</h5>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/manage.png" alt="">
+                    <div class="text">
+                        <h4>Manages Booking</h4>
+                        <h5>View and manage your bookings</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="moving">
+                <div class="content">
+                    <h1>Top <span id="move-title">Bus</span> Partner</h1>
+                    <p>Travel with the best <span id="move-desc">Buses</span> in Pakistan.</p>
+                    <div class="slider-container">
+                        <div id="bus-content">
+                            <div class="slider">
+                                <img src="/img/khan.png" alt="">
+                                <img src="/img/bashir.png" alt="">
+                                <img src="/img/daewoo-express.jpg" alt="">
+                                <img src="/img/kt.jpg" alt="">
+                                <img src="/img/pkl.png" alt="">
+                                <img src="/img/Skyways_new.jpg" alt="">
+                                <img src="/img/silklines.png" alt="">
+                            </div>
+                            <div class="slider">
+                                <img src="/img/khan.png" alt="">
+                                <img src="/img/bashir.png" alt="">
+                                <img src="/img/daewoo-express.jpg" alt="">
+                                <img src="/img/kt.jpg" alt="">
+                                <img src="/img/pkl.png" alt="">
+                                <img src="/img/Skyways_new.jpg" alt="">
+                                <img src="/img/silklines.png" alt="">
+                            </div>
+                        </div>
+                        <div id="airline-content">
+                            <div class="slider">
+                                <img src="/img/airblue.png" alt="">
+                                <img src="/img/airsial.png" alt="">
+                                <img src="/img/emirate.png" alt="">
+                                <img src="/img/fly.png" alt="">
+                                <img src="/img/fast.png" alt="">
+                                <img src="/img/pia.png" alt="">
+                                <img src="/img/fj.png" alt="">
+                            </div>
+                            <div class="slider">
+                                <img src="/img/airblue.png" alt="">
+                                <img src="/img/airsial.png" alt="">
+                                <img src="/img/emirate.png" alt="">
+                                <img src="/img/fly.png" alt="">
+                                <img src="/img/fast.png" alt="">
+                                <img src="/img/pia.png" alt="">
+                                <img src="/img/fj.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="black-div">
+                <div class="black-div-content">
+                    <h1>Why Use Bookme?</h1>
+                    <h3>We provide the best deals in Pakistan.</h3>
+                    <div class="cards">
+                        <div class="boxes">
+                            <img src="/img/less.png" alt="">
+                            <div class="text">
+                                <h4>More for Less</h4>
+                                <h5>We offer e-tickets with exceptional discounted deals across the country </h5>
+                            </div>
+                        </div>
+                        <div class="boxes">
+                            <img src="/img/fares.png" alt="">
+                            <div class="text">
+                                <h4>Lowest Fares</h4>
+                                <h5>We provide affordable tickets to save up to 50%</h5>
+                            </div>
+                        </div>
+                        <div class="boxes">
+                            <img src="/img/discover.png" alt="">
+                            <div class="text">
+                                <h4>Discover</h4>
+                                <h5>We make travelling easy across Pakistan by providing easy e-ticket</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="app-div">
+                <div class="blue-app">
+                    <div class="side-one">
+                        <h1>Download our app</h1>
+                        <h4>Get amazing deals and bundles on Bookme Application.</h4>
+                        <div class="logos">
+                            <img src="/img/applestore.png" alt="">
+                            <img src="/img/googlestore.png" alt="">
+                        </div>
+                        <form class="form">
+                            <input type="email" placeholder="Enter your email">
+                            <button>Get Link</button>
+                        </form>
+                        <p>Your privacy is important for us.check our <span>Privacy Policy.</span></p>
+                    </div>
+                    <div class="side-two">
+                        <img src="/img/mobile.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="footer-content">
+                    <div class="top-footer">
+                        <div class="footer-logo">
+                            <img src="/img/footerlogo.png" alt="">
+                        </div>
+                        <div class="footer-icons">
+                            <h2>Connect Us</h2>
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-tiktok"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                    </div>
+                    <div class="links">
+                        <div class="link">
+                            <p class="main-link">Quick Links <i class="fa-solid fa-caret-right"></i></p>
+                            <p>Popular Airlines</p>
+                            <p>Top U.S. Destinations</p>
+                            <p>Top International Destinations</p>
+                            <p>Site Directories</p>
+                            <p>Stay Connected</p>
+                            <p>International Sites</p>
+                        </div>
+                        <div class="link">
+                            <p>Book</p>
+                            <p>Popular Airlines</p>
+                            <p>Top U.S. Destinations</p>
+                            <p>Top International Destinations</p>
+                            <p>Site Directories</p>
+                            <p>Stay Connected</p>
+                            <p>International Sites</p>
+                        </div>
+                        <div class="link">
+                            <p>Traveler </p>
+                            <p>Popular Airlines</p>
+                            <p>Top U.S. Destinations</p>
+                            <p>Top International Destinations</p>
+                            <p>Site Directories</p>
+                            <p>Stay Connected</p>
+                            <p>International Sites</p>
+                        </div>
+                        <div class="link">
+                            <p>About Cheapoair</p>
+                            <p>Popular Airlines</p>
+                            <p>Top U.S. Destinations</p>
+                            <p>Top International Destinations</p>
+                            <p>Site Directories</p>
+                            <p>Stay Connected</p>
+                            <p>International Sites</p>
+                        </div>
+                    </div>
+                    <p class="footer-text">© 2006-2023 Fareportal, Inc. All rights reserved.</p>
+                </div>
+            </footer>
+        </div>
+    </section>
+    <script src="/index.js"></script>
+</body>
+
+</html>

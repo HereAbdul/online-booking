@@ -1,0 +1,219 @@
+@media(max-width:1350px) {
+    form .input-box {
+        display: flex;
+        align-items: stretch;
+    }
+
+    form .select {
+        margin-left: 2px;
+        padding: 5px;
+    }
+
+    form .input-box .form-btn button {
+        padding: 5px 20px 5px 20px;
+        margin-left: 5px;
+        font-size: 17px;
+
+    }
+
+    .container {
+        padding: 0 20px 0 20px;
+    }
+
+    .cards .card {
+        padding: 10px 10px 10px 10px;
+        font-size: 15px;
+        font-size: 12px;
+    }
+
+    .card img {
+        width: 30px;
+    }
+}
+
+@media(max-width:1000px) {
+    .container .home-text h1 {
+        font-size: 20px;
+    }
+
+    .home-text h5 {
+        font-size: 10px;
+    }
+
+    .check-box p {
+        margin-left: 2px;
+        font-size: 13px
+    }
+
+    .check-box input[type='checkbox'] {
+        margin-right: 5px;
+        width: 0.8em;
+        height: 0.8em;
+        cursor: pointer;
+    }
+
+    form .input-box {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    form .select {
+        margin-left: 2px;
+        padding: 5px;
+        display: flex;
+        margin: 5px;
+        width: 100%;
+
+    }
+
+    .select select {
+        width: 100%;
+    }
+
+    .select input[type='date'] {
+        width: 100%;
+    }
+
+    form .input-box .form-btn button {
+        padding: 5px 20px 5px 20px;
+        font-size: 17px;
+        display: flex;
+        align-items: center;
+    }
+
+    .form-btn button i {
+        margin-right: 5px;
+    }
+
+    .cards .card {
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .card img {
+        margin-right: 2px;
+    }
+
+    .app-div .blue-app {
+        padding: 20px 10px 0 10px;
+        gap: 1rem;
+    }
+}
+
+@media(max-width:700px) {
+    header .top-alert {
+        font-size: 12px;
+    }
+
+    header nav .container {
+        padding: 5px;
+    }
+
+    .one-side .fa-bars {
+        font-size: 15px;
+        margin-right: 7px;
+    }
+
+    nav .container .one-side img {
+        width: 80px;
+    }
+
+    .two-side ul li {
+        margin-right: 5px;
+        padding: 10px 5px 10px 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 13px;
+    }
+
+    .cards {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .cards .card {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+
+    }
+
+    .card img {
+        margin: auto;
+        margin-bottom: 5px;
+    }
+
+    .black-div-content h1 {
+
+        font-size: 20px;
+    }
+
+    .black-div-content h3 {
+        font-size: 15px;
+    }
+
+    .app-div .blue-app {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .blue-app .side-one h1 {
+        font-size: 20px;
+    }
+
+    .logos img {
+        width: 90px;
+        margin: auto;
+    }
+
+    .side-one .form {
+        flex-wrap: wrap;
+
+    }
+
+    .form input[type='email'] {
+        width: 100%;
+    }
+
+    .form button {
+        margin: auto;
+        font-size: 10px;
+    }
+
+    .side-two img {
+        width: 200px;
+    }
+
+    footer .top-footer .footer-logo img {
+        width: 40px;
+    }
+
+    .footer-icons h2 {
+        margin-right: 2px;
+        font-size: 13px;
+    }
+
+    .top-footer .footer-icons i {
+        padding: 5px;
+        font-size: 10px;
+        margin-left: 5px;
+    }
+
+    .footer-content .links {
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .links .link {
+        margin-top: 15px;
+    }
+
+    .footer-content .footer-text {
+        font-size: 10px;
+    }
+}
